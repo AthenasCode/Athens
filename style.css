@@ -7,7 +7,7 @@ body {
 }
 :root {
     --primary-color: #234A9E;
-    --secondary-color: #3558A5;
+    --secondary-color: #4a69ac;
 }
 
 /*---------------------------------------------------HEADER------------------------------------------------------*/
@@ -51,9 +51,56 @@ nav .nav-bar{
     justify-content: center;
 }
 
-.center-menu textarea{
-    width: 500px;  
-    height: 35px;
+.flexsearch--input-wrapper {
+	overflow: hidden;
+}
+
+.flexsearch--input {
+  width: 100%;
+}
+
+.flexsearch--input {
+    box-sizing: content-box;
+    height: 30px;
+    padding: 0 12px 0 10px;
+    border-color: #888;
+    border-radius: 25px; /* (height/2) + border-width */
+    border-style: solid;
+    border-width: 2px;
+    color: #333;
+    font-size: 15px;
+    margin-top: 3px;
+    width: 500px;
+}
+    
+.flexsearch--submit {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 90px;
+    height: 60px;
+    padding: 0;
+    border: none;
+    margin-right: 5px; /* border-width */
+    background: transparent;
+    color: #888;
+    font-size: 40px;
+    line-height: 90px;
+}
+
+.flexsearch--input:focus {
+    outline: none;
+    border-color: #333;
+}
+
+.flexsearch--input:focus.flexsearch--submit {
+    color: #333; 
+}
+
+.flexsearch--submit:hover {
+    color: #adadad;
+    cursor: pointer;
 }
 
 
@@ -110,12 +157,14 @@ nav .nav-bar{
 .dropdown {
     display: none; 
     position: absolute; 
-    background-color: #E1E6F1;
     color: var(--primary-color);
     list-style: none;
     margin: 0;
     text-transform: none;
+    font-weight: 400;
     margin-left: 0px;
+    padding: 0; 
+    box-sizing: border-box;
 }
 
 .item {
@@ -129,9 +178,9 @@ nav .nav-bar{
 .dropdown li {
     padding: 10px; 
     margin: 0px; 
-    background-color: #f9f9f9; 
-    border: 1px solid #ddd;
+    border: 5px 5px #979797;
     transition: background-color 0.3s; 
+    width: 100%;
 }
 
 .dropdown li:last-child {
@@ -140,6 +189,16 @@ nav .nav-bar{
 
 .dropdown li:hover {
     background-color: #e0e0e0; 
+}
+
+.li1{
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+
+.li2{
+    background-color: #eaeaeb;
+    color: var(--primary-color);
 }
 
 /*--------------------------------------------------------------------FOOTER------------------------------------------*/
