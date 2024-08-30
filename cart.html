@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="cartpage">
+    <main>
+        <nav class="breadcrumb">
+            <a href="#">Inicio</a> &gt; <a href="#">Carrito</a>
+        </nav>
+        
+        <div class="container">
+            <section class="products">
+                <h2>Tu Carrito</h2>
+                <div class="product">
+                    <img src="https://via.placeholder.com/100" alt="Producto 1">
+                    <div class="product-info">
+                        <span class="product-name">Producto 1</span>
+                        <div class="shipping-method">
+                            <label><input type="radio" name="shipping1" value="standard"> Envío estándar</label>
+                            <label><input type="radio" name="shipping1" value="express"> Envío exprés</label>
+                            <label><input type="radio" name="shipping1" value="overnight"> Envío nocturno</label>
+                        </div>
+                        <label for="quantity1">Cantidad:</label>
+                        <select id="quantity1" name="quantity1">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/100" alt="Producto 2">
+                    <div class="product-info">
+                        <span class="product-name">Producto 2</span>
+                        <div class="shipping-method">
+                            <label><input type="radio" name="shipping2" value="standard"> Envío estándar</label>
+                            <label><input type="radio" name="shipping2" value="express"> Envío exprés</label>
+                            <label><input type="radio" name="shipping2" value="overnight"> Envío nocturno</label>
+                        </div>
+                        <label for="quantity2">Cantidad:</label>
+                        <select id="quantity2" name="quantity2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="product">
+                    <img src="https://via.placeholder.com/100" alt="Producto 3">
+                    <div class="product-info">
+                        <span class="product-name">Producto 3</span>
+                        <div class="shipping-method">
+                            <label><input type="radio" name="shipping3" value="standard"> Envío estándar</label>
+                            <label><input type="radio" name="shipping3" value="express"> Envío exprés</label>
+                            <label><input type="radio" name="shipping3" value="overnight"> Envío nocturno</label>
+                        </div>
+                        <label for="quantity3">Cantidad:</label>
+                        <select id="quantity3" name="quantity3">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+            <aside class="summary">
+                <h2>Resumen del Pedido</h2>
+                <ul>
+                    <li>Subtotal: $3.650.200</li>
+                    <li>Valor Envío: $37.000</li>
+                    <li>Descuento BlackFriday: -$200.000</li>
+                    <li>Descuento envío gratis: -$37.000</li>
+                    <li>Total Descuentos: -$237.000</li>
+                    <li>Subtotal: $3.450.000</li>
+                    <li>IVA (19%): $655.500</li>
+                    <li>Total: $4.105.000</li>
+                </ul>
+                <button type="button" class="checkout-button">Iniciar Pago</button>
+            </aside>
+        </div>
+    </main>
+</body>
+</html>
