@@ -4,21 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="cartpage">
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div>
+                    <img src="./img/logo.png" alt="Logo Athens" width="200px">
+                </div>
+                <div>
+                    <div class="center-menu">
+                        <img src="./img/search-icon.svg" alt="Icono de búsqueda">
+                        <input class="flexsearch--input" type="search" placeholder="search">
+                    </div>
+                </div>
+                <div>
+                    <div class="right-menu">
+                        <img src="./img/user-icon.svg" width="30px" alt="Icono de Usuario">
+                        <a href="#" class="hover-button">Mi cuenta</a>
+                        <img src="./img/car-icon.svg" width="30px" alt="Icono de Carrito">
+                        <a href="#" class="hover-button">Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subnavbar">
+                <div class="item">
+                    <h3>Tecnología</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="1">
+                    <ul class="dropdown" id="dropdown-1">
+                        <li>Computadores</li>
+                        <li>Televisores</li>
+                        <li>Audio</li>
+                        <li>Video</li>
+                        <li>Impresión</li>
+                        <li>Cámaras</li>
+                    </ul>
+                </div>
+
+
+                <div class="item">
+                    <h3>Electrodomésticos</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="2">
+                    <ul class="dropdown" id="dropdown-2">
+                        <li>Climatización</li>
+                        <li>Refrigeración</li>
+                        <li>Lavadoras/Secadoras</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>Celulares</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="3">
+                    <ul class="dropdown" id="dropdown-3">
+                        <li>Celulares</li>
+                        <li>Tabletas</li>
+                        <li>Smartwatch</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>Hogar</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="4">
+                    <ul class="dropdown" id="dropdown-4">
+                        <li>Salas</li>
+                        <li>Comedor</li>
+                        <li>Cocina</li>
+                        <li>Baño</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
     <main>
         <nav class="breadcrumb">
             <a href="#">Inicio</a> &gt; <a href="#">Carrito</a>
         </nav>
         
-        <div class="container">
-            <section class="products">
+        <div class="containercart">
+            <section class="productscart">
                 <h2>Tu Carrito</h2>
-                <div class="product">
+                <div class="productcart">
                     <img src="https://via.placeholder.com/100" alt="Producto 1">
-                    <div class="product-info">
-                        <span class="product-name">Producto 1</span>
+                    <div class="productcart-info">
+                        <span class="productcart-name">Producto 1</span>
                         <div class="shipping-method">
                             <label><input type="radio" name="shipping1" value="standard"> Envío estándar</label>
                             <label><input type="radio" name="shipping1" value="express"> Envío exprés</label>
@@ -32,10 +104,10 @@
                         </select>
                     </div>
                 </div>
-                <div class="product">
+                <div class="productcart">
                     <img src="https://via.placeholder.com/100" alt="Producto 2">
-                    <div class="product-info">
-                        <span class="product-name">Producto 2</span>
+                    <div class="productcart-info">
+                        <span class="productcart-name">Producto 2</span>
                         <div class="shipping-method">
                             <label><input type="radio" name="shipping2" value="standard"> Envío estándar</label>
                             <label><input type="radio" name="shipping2" value="express"> Envío exprés</label>
@@ -49,10 +121,10 @@
                         </select>
                     </div>
                 </div>
-                <div class="product">
+                <div class="productcart">
                     <img src="https://via.placeholder.com/100" alt="Producto 3">
-                    <div class="product-info">
-                        <span class="product-name">Producto 3</span>
+                    <div class="productcart-info">
+                        <span class="productcart-name">Producto 3</span>
                         <div class="shipping-method">
                             <label><input type="radio" name="shipping3" value="standard"> Envío estándar</label>
                             <label><input type="radio" name="shipping3" value="express"> Envío exprés</label>
@@ -83,5 +155,35 @@
             </aside>
         </div>
     </main>
+    <footer>
+        <div class="subfooter1">
+            <div class="razon">
+                <h3>Athens S.A.S</h3>
+                <h3>NIT: 9003258</h3>
+            </div>
+            <div class="redes">
+                <img src="./img/github-icon.svg" alt="Icono de Github">
+                <img src="./img/instagram-icon.svg" alt="Icono de Instagram">
+                <img src="./img/youtube-icon.svg" alt="Icono de Youtube">
+            </div>
+            <div class="pagos">
+                <div class="arriba">
+                    <h3>Método de Pagos</h3>
+                </div>
+                <div class="abajo">
+                    <img src="./img/efectivo-icon.svg" alt="Icono de Efectivo">
+                    <img src="./img/tarjeta-icon.svg" alt="Icono de Tarjeta">
+                    <img src="./img/transfer-icon.svg" alt="Icono de Transferencia">
+                </div>
+            </div>
+        </div>
+        <div class="subfooter2">
+            <h3>Tecnología</h3>
+            <h3>Electrodomésticos</h3>
+            <h3>Celulares</h3>
+            <h3>Hogar</h3>
+
+        </div>
+    </footer>
 </body>
 </html>
