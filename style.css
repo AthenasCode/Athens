@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff; 
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #234A9E;
+    --secondary-color: #4a69ac;
+}
+
+.content {
+    padding: 10px;
+    width: 90%;
+    margin: auto; 
+}
+.content>div, .content>section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*---------------------------------------------------HEADER------------------------------------------------------*/
+
+/*NAVBAR*/
+.header, nav, .subnavbar {
+    width: 100vw;
+}
+
+nav{
+    background-color: #ffffff; 
+    font-weight: bold;
+}
+
+.nav-bar{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 10px; 
+   margin-bottom: 10px;
+}
+
+.nav-bar{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-bar>div {
+    display: flex;
+}
+.center-menu, .right-menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.flexsearch--input {
+    width: 30vw;
+}
+.hover-button:hover {
+    background-color: #a7a3a398; 
+}
+
+.hover-button {
+    display: inline-block;
+    padding: 10px 10px;
+    height: 20px;
+    background-color: #ffffff; 
+    color: #2C3E50;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+
+/*SUB-NAVBAR*/
+.subnavbar{
+    background-color: var(--primary-color);
+    height: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    width: 100vw;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 25px; 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0 10px; 
+}
+
+.subnavbar h3{
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: medium;
+}
+
+.subnavbar img{
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none; 
+    position: absolute; 
+    color: var(--primary-color);
+    list-style: none;
+    margin: 0;
+    text-transform: none;
+    font-weight: 400;
+    margin-left: 0px;
+    padding: 0; 
+    box-sizing: border-box;
+    top: 50px;
+    background: white;
+}
+
+.item {
+    position: relative;
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    
+}
+
+.item:hover .dropdown, .dropdown:hover {
+    display: block;
+    transition: all .5s; 
+}
+
+.dropdown li {
+    padding: 10px; 
+    margin: 0px; 
+    border: 5px 5px #979797;
+    transition: background-color 0.3s; 
+    width: 100%;
+    cursor: pointer;
+}
+.dropdown li{
+    background: white;
+}
+.dropdown li:nth-child(2n){
+    background: #eaeaeb;
+}
+.dropdown li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown li:hover {
+    background-color: #e0e0e0; 
+}
+
+
+/*--- Responsive styles---*/
+@media (max-width: 768px) {
+    nav {
+        display: block;
+        width: 100%;
+    }
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        margin: 0 !important; 
+    }
+    .nav-bar>div {
+        width: 100%;
+        justify-content: center;
+    }
+    .subnavbar {
+        display: none;
+        /*POR AHORA*/
+    }
+}
+/*--------------------------------------------------------------------FOOTER------------------------------------------*/
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    height: 200px;
+    bottom: 0;
+    width: 100vw;
+    display: inline-block;
+    color: #ffffff;
+    line-height: 0.5;
+}
+.subfooter1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.subfooter2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 0;
+    margin-left: 35px;
+    margin-top: 0;
+    padding: 0;
+}
+
+footer .razon{
+    margin-left: 35px;
+    line-height: 0.5;
+}
+
+footer .pagos{
+    margin-right: 35px;
+}
+
+footer .redes{
+    margin-top: 20px;
+    gap: 15px;
+}
+
+footer .redes img{
+    width: 40px; 
+    height: 41px;
+}
+footer img {
+    display: inline-block;
+    margin: 0 auto 10px;
+    width: 50px; 
+    height: 51px;
+    gap: 10px;
+}
+@media (max-width: 768px) {
+    footer {
+        height: auto !important;
+        position: inherit !important;
+    }
+    .subfooter1>div {
+        margin:0 !important;
+        padding: 0 !important;
+    }
+    .subfooter2, .subfooter1 {
+        display: block !important;
+    }
+}
+/** PDP SECTION **/
+.breadcrumb {
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.product-info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+}
+
+.product-main {
+    display: grid;
+}
+.product-characteristics table {
+    width: 100%;
+}
+.product-characteristics>table>tbody>tr>* {
+    padding: 10px;
+}
+.product-characteristics>table>tbody>tr:nth-child(2n){
+    background: #eaeaeb;
+}
+.related-items {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card {
+    display: grid;
+}
+.card img {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .product-info {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    .related-items {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    .product-info img {
+        width: 100%;
+    }
+}
