@@ -64,7 +64,7 @@ nav .nav-bar{
     height: 30px;
     padding: 0 12px 0 10px;
     border-color: #888;
-    border-radius: 25px; /* (height/2) + border-width */
+    border-radius: 25px; 
     border-style: solid;
     border-width: 2px;
     color: #333;
@@ -82,7 +82,7 @@ nav .nav-bar{
     height: 60px;
     padding: 0;
     border: none;
-    margin-right: 5px; /* border-width */
+    margin-right: 5px; 
     background: transparent;
     color: #888;
     font-size: 40px;
@@ -124,6 +124,7 @@ nav .nav-bar{
 .btn-1{
     margin-right: 40px;
 }
+
 
 /*SUB-NAVBAR*/
 .subnavbar{
@@ -206,31 +207,51 @@ nav .nav-bar{
 footer {
     text-align: center;
     background-color: var(--primary-color);
-    border-radius: 4px;
-    height: 90px;
-    position: fixed; 
+    height: 200px;
+    position: absolute; 
     bottom: 0;
-    width: 100%;
-}
-
-footer h4 {
-    margin-bottom: 10px;
+    width: 100vw;
+    display: inline-block;
     color: #ffffff;
+    line-height: 0.5;
+}
+.subfooter1{
+    display: flex;
+    justify-content: space-between;
 }
 
-footer .social-icons {
-    margin-top: 10px;
+.subfooter2{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-bottom: 0;
+    margin-left: 35px;
+    margin-top: 0;
+    padding: 0;
 }
 
-footer a {
-    text-decoration: none; 
+footer .razon{
+    margin-left: 35px;
+    line-height: 0.5;
 }
 
+footer .pagos{
+    margin-right: 35px;
+}
+
+footer .redes{
+    margin-top: 20px;
+    gap: 15px;
+}
+
+footer .redes img{
+    width: 40px; 
+    height: 41px;
+}
 footer img {
     display: inline-block;
     margin: 0 auto 10px;
-    width: 30px; 
-    height: 31px;
+    width: 50px; 
+    height: 51px;
+    gap: 10px;
 }
-
-
