@@ -361,22 +361,7 @@ footer img {
     margin-bottom: 10px;
 }
 
-.checkout-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    text-align: center;
-}
 
-.cartpage .checkout-button:hover {
-    background-color: var(--secondary-color);
-}
 
 @media (max-width: 768px) {
     .containercart {
