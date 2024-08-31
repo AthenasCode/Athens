@@ -30,29 +30,52 @@ nav .nav-bar{
    margin-top: 10px; 
    margin-bottom: 10px;
 }
+
 .nav-bar{
     margin-left: 10px;
     margin-right: 10px;
 }
+
 .left-menu {
     display: flex;
     justify-content: flex-start; 
 }
 
+.left-menu img{
+    width:63%; 
+}
+
 .right-menu{
-    margin-top: 15px;
+    margin-top: 25px;
     display: flex;
     justify-content: flex-end;
+    margin-right: 20px;
+}
+
+
+.right-menu img{
+    width: 60%;
+    height: 60%;
 }
 
 .center-menu{
-    margin-top: 15px;
+    margin-top: 0px;
     display: flex;
     justify-content: center;
+    align-items: center; /* Alinea verticalmente al centro */
+    width: 100%;
+}
+
+.center-menu img{
+    width: 5%;
 }
 
 .flexsearch--input-wrapper {
 	overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra la barra de búsqueda */
+    width: 100%; /* Ajusta el contenedor al 100% del ancho */
+    margin: 0 auto; /
 }
 
 .flexsearch--input {
@@ -62,15 +85,17 @@ nav .nav-bar{
 .flexsearch--input {
     box-sizing: content-box;
     height: 30px;
-    padding: 0 12px 0 10px;
     border-color: #888;
     border-radius: 25px; 
     border-style: solid;
     border-width: 2px;
     color: #333;
     font-size: 15px;
-    margin-top: 3px;
-    width: 500px;
+    width: 100%; 
+    max-width: 500px; 
+    padding: 0 12px; 
+    margin: 0;
+    margin-right: 98px;
 }
     
 .flexsearch--submit {
@@ -119,12 +144,13 @@ nav .nav-bar{
     text-transform: uppercase;
     text-decoration: none;
     transition: background-color 0.3s;
+    white-space: nowrap;
 }
 
 .btn-1{
     margin-right: 40px;
+    width: 120px;
 }
-
 
 /*SUB-NAVBAR*/
 .subnavbar{
@@ -255,3 +281,5 @@ footer img {
     height: 51px;
     gap: 10px;
 }
+
+
