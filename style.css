@@ -15,7 +15,10 @@ body {
     width: 90%;
     margin: auto; 
 }
-
+.content>div, .content>section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 /*---------------------------------------------------HEADER------------------------------------------------------*/
 
 /*NAVBAR*/
@@ -137,7 +140,12 @@ nav{
     width: 100%;
     cursor: pointer;
 }
-
+.dropdown li{
+    background: white;
+}
+.dropdown li:nth-child(2n){
+    background: #eaeaeb;
+}
 .dropdown li:last-child {
     margin-bottom: 0;
 }
@@ -146,15 +154,6 @@ nav{
     background-color: #e0e0e0; 
 }
 
-.li1{
-    background-color: #ffffff;
-    color: var(--primary-color);
-}
-
-.li2{
-    background-color: #eaeaeb;
-    color: var(--primary-color);
-}
 
 /*--- Responsive styles---*/
 @media (max-width: 768px) {
@@ -175,17 +174,7 @@ nav{
     }
     .subnavbar {
         display: none;
-    }
-    footer {
-        height: auto !important;
-        position: inherit !important;
-    }
-    .subfooter1>div {
-        margin:0 !important;
-        padding: 0 !important;
-    }
-    .subfooter2, .subfooter1 {
-        display: block !important;
+        /*POR AHORA*/
     }
 }
 /*--------------------------------------------------------------------FOOTER------------------------------------------*/
@@ -194,7 +183,6 @@ footer {
     text-align: center;
     background-color: var(--primary-color);
     height: 200px;
-    position: absolute; 
     bottom: 0;
     width: 100vw;
     display: inline-block;
@@ -241,10 +229,66 @@ footer img {
     height: 51px;
     gap: 10px;
 }
+@media (max-width: 768px) {
+    footer {
+        height: auto !important;
+        position: inherit !important;
+    }
+    .subfooter1>div {
+        margin:0 !important;
+        padding: 0 !important;
+    }
+    .subfooter2, .subfooter1 {
+        display: block !important;
+    }
+}
 /** PDP SECTION **/
 .breadcrumb {
     padding: 10px;
     background: white;
     border-bottom: 1px solid var(--primary-color);
     color: var(--primary-color);
+}
+.product-info {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr;
+}
+
+.product-main {
+    display: grid;
+}
+.product-characteristics table {
+    width: 100%;
+}
+.product-characteristics>table>tbody>tr>* {
+    padding: 10px;
+}
+.product-characteristics>table>tbody>tr:nth-child(2n){
+    background: #eaeaeb;
+}
+.related-items {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+.card {
+    display: grid;
+}
+.card img {
+    width: 100%;
+}
+@media (max-width: 768px) {
+    .product-info {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    .related-items {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    .product-info img {
+        width: 100%;
+    }
 }
