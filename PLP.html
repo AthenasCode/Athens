@@ -3,81 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Lista de Productos</title>
+    <title>Página de Lista de Electrodomésticos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
     <div class="main-content">
         <aside class="filters">
             <h2>Filtros</h2>
-            <h3>xxxx</h3>
-            <label><input type="checkbox"> XYZ (5)</label><br>
-            <label><input type="checkbox"> ABC (3)</label><br>
-            <label><input type="checkbox"> 123 (2)</label>
+            <h3>Categoría</h3>
+            <label><input type="checkbox"> Cocina (15)</label><br>
+            <label><input type="checkbox"> Lavandería (8)</label><br>
+            <label><input type="checkbox"> Refrigeración (10)</label>
             
-            <h3>xxxx</h3>
-            <label><input type="checkbox"> XYZ (5)</label><br>
-            <label><input type="checkbox"> ABC (3)</label><br>
-            <label><input type="checkbox"> 123 (2)</label>
+            <h3>Marca</h3>
+            <label><input type="checkbox"> Samsung (12)</label><br>
+            <label><input type="checkbox"> LG (9)</label><br>
+            <label><input type="checkbox"> Whirlpool (7)</label>
             
-            <h3>xxxx</h3>
-            <label><input type="checkbox"> XYZ (5)</label><br>
-            <label><input type="checkbox"> ABC (3)</label><br>
-            <label><input type="checkbox"> 123 (2)</label>
+            <h3>Rango de Precio</h3>
+            <label><input type="checkbox"> Menos de $500 (5)</label><br>
+            <label><input type="checkbox"> $500 - $1000 (8)</label><br>
+            <label><input type="checkbox"> Más de $1000 (12)</label>
             
-            <h3>xxxx</h3>
-            <label><input type="checkbox"> XYZ (5)</label><br>
-            <label><input type="checkbox"> ABC (3)</label><br>
-            <label><input type="checkbox"> 123 (2)</label>
+            <h3>Eficiencia Energética</h3>
+            <label><input type="checkbox"> A+++ (10)</label><br>
+            <label><input type="checkbox"> A++ (8)</label><br>
+            <label><input type="checkbox"> A+ (7)</label>
             
-            <h3>xxxx</h3>
-            <label><input type="checkbox"> XYZ (5)</label><br>
-            <label><input type="checkbox"> ABC (3)</label><br>
-            <label><input type="checkbox"> 123 (2)</label>
+            <h3>Color</h3>
+            <label><input type="checkbox"> Blanco (15)</label><br>
+            <label><input type="checkbox"> Acero Inoxidable (10)</label><br>
+            <label><input type="checkbox"> Negro (5)</label>
         </aside>
 
         <section class="product-list">
             <select>
                 <option>Ordenar por: Relevancia</option>
-                <option>Fecha de carga</option>
+                <option>Fecha de lanzamiento</option>
                 <option>Precio: menor a mayor</option>
                 <option>Precio: mayor a menor</option>
             </select>
 
             <div class="products">
                 <div class="product">
-                    <h3>Smartphone XYZ</h3>
-                    <p>Calificación: ★★★★☆ 4.5</p>
-                    <ul>
-                        <li>5G</li>
-                        <li>128GB</li>
-                        <li>Dual SIM</li>
-                    </ul>
-                    <p>Precio normal: $999.99</p>
-                    <p>Precio con descuento: $899.99</p>
+                    <a href="pdp.html">
+                        <img src="/api/placeholder/200/200" alt="Nevera Samsung RT38">
+                        <h3>Nevera Samsung RT38</h3>
+                        <p>Calificación: ★★★★☆ 4.5</p>
+                        <ul>
+                            <li>No Frost</li>
+                            <li>380 litros</li>
+                            <li>Dispensador de agua</li>
+                        </ul>
+                        <p>Precio normal: $1299.99</p>
+                        <p>Precio con descuento: $1149.99</p>
+                    </a>
                     <button class="estilo">Añadir al carrito</button>
                 </div>
                 <div class="product">
-                    <h3>Smartphone XYZ</h3>
-                    <p>Calificación: ★★★★☆ 4.5</p>
+                    <img src="/api/placeholder/200/200" alt="Lavadora LG F4J5TN3W">
+                    <h3>Lavadora LG F4J5TN3W</h3>
+                    <p>Calificación: ★★★★★ 5.0</p>
                     <ul>
-                        <li>5G</li>
-                        <li>128GB</li>
-                        <li>Dual SIM</li>
+                        <li>8 kg de capacidad</li>
+                        <li>1400 RPM</li>
+                        <li>Eficiencia A+++</li>
                     </ul>
-                    <p>Precio normal: $999.99</p>
-                    <p>Precio con descuento: $899.99</p>
+                    <p>Precio normal: $799.99</p>
+                    <p>Precio con descuento: $749.99</p>
                     <button class="estilo">Añadir al carrito</button>
                 </div>
             </div>
-            
-
+            <div class="products">
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Horno Whirlpool AKZ9 6230 NB">
+                    <h3>Horno Whirlpool AKZ9 6230 NB</h3>
+                    <p>Calificación: ★★★★☆ 4.3</p>
+                    <ul>
+                        <li>Multifunción</li>
+                        <li>73 litros</li>
+                        <li>Pirolítico</li>
+                    </ul>
+                    <p>Precio normal: $599.99</p>
+                    <p>Precio con descuento: $549.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Lavavajillas Bosch SMS25AW05E">
+                    <h3>Lavavajillas Bosch SMS25AW05E</h3>
+                    <p>Calificación: ★★★★☆ 4.7</p>
+                    <ul>
+                        <li>12 servicios</li>
+                        <li>5 programas</li>
+                        <li>Clase A++</li>
+                    </ul>
+                    <p>Precio normal: $649.99</p>
+                    <p>Precio con descuento: $599.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Microondas Panasonic NN-GD38HS">
+                    <h3>Microondas Panasonic NN-GD38HS</h3>
+                    <p>Calificación: ★★★★☆ 4.2</p>
+                    <ul>
+                        <li>Grill</li>
+                        <li>23 litros</li>
+                        <li>1000W potencia</li>
+                    </ul>
+                    <p>Precio normal: $199.99</p>
+                    <p>Precio con descuento: $179.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Secadora Electrolux EW8H4964IB">
+                    <h3>Secadora Electrolux EW8H4964IB</h3>
+                    <p>Calificación: ★★★★☆ 4.6</p>
+                    <ul>
+                        <li>9 kg de capacidad</li>
+                        <li>Bomba de calor</li>
+                        <li>Clase A+++</li>
+                    </ul>
+                    <p>Precio normal: $899.99</p>
+                    <p>Precio con descuento: $849.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Campana Extractora Teka DSB 90">
+                    <h3>Campana Extractora Teka DSB 90</h3>
+                    <p>Calificación: ★★★★☆ 4.4</p>
+                    <ul>
+                        <li>90 cm de ancho</li>
+                        <li>3 velocidades</li>
+                        <li>Iluminación LED</li>
+                    </ul>
+                    <p>Precio normal: $299.99</p>
+                    <p>Precio con descuento: $269.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Placa de Inducción Balay 3EB965LR">
+                    <h3>Placa de Inducción Balay 3EB965LR</h3>
+                    <p>Calificación: ★★★★★ 4.8</p>
+                    <ul>
+                        <li>60 cm de ancho</li>
+                        <li>3 zonas de cocción</li>
+                        <li>Control táctil</li>
+                    </ul>
+                    <p>Precio normal: $449.99</p>
+                    <p>Precio con descuento: $399.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+            </div>
+            <div class="products">
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Cafetera Automática DeLonghi ECAM 22.110.B">
+                    <h3>Cafetera Automática DeLonghi ECAM 22.110.B</h3>
+                    <p>Calificación: ★★★★☆ 4.5</p>
+                    <ul>
+                        <li>15 bares de presión</li>
+                        <li>Molinillo integrado</li>
+                        <li>Depósito 1.8L</li>
+                    </ul>
+                    <p>Precio normal: $399.99</p>
+                    <p>Precio con descuento: $349.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
+                <div class="product">
+                    <img src="/api/placeholder/200/200" alt="Aspiradora Robot iRobot Roomba 981">
+                    <h3>Aspiradora Robot iRobot Roomba 981</h3>
+                    <p>Calificación: ★★★★☆ 4.7</p>
+                    <ul>
+                        <li>Navegación inteligente</li>
+                        <li>Compatible con app</li>
+                        <li>Ideal para mascotas</li>
+                    </ul>
+                    <p>Precio normal: $599.99</p>
+                    <p>Precio con descuento: $549.99</p>
+                    <button class="estilo">Añadir al carrito</button>
+                </div>
             </div>
         </section>
     </div>
-
-  
 </body>
 </html>
