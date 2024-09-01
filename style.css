@@ -10,19 +10,31 @@ body {
     --secondary-color: #4a69ac;
 }
 
-.content {
-    padding: 10px;
-    width: 90%;
-    margin: auto; 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #234a9e transparent;
 }
-.content>div, .content>section {
-    padding-top: 10px;
-    padding-bottom: 10px;
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
 }
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #234a9e;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
+
 /*---------------------------------------------------HEADER------------------------------------------------------*/
 
 /*NAVBAR*/
-.header, nav, .subnavbar {
+.header {
     width: 100vw;
 }
 
@@ -79,7 +91,7 @@ nav{
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    width: 100vw;
+    width: 100%;
     display: flex; 
     align-items: center; 
     justify-content: flex-start; 
@@ -177,6 +189,318 @@ nav{
         /*POR AHORA*/
     }
 }
+/* ------------------------------------------------------------------CONTENT------------------------------------------*/
+/* Estilos para el contenido en main*/
+
+.container-home {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 100%; /* 100% por cada imagen, si tienes 3 imágenes */
+  height: 100%;
+  animation: slide 20s infinite; /* 15s por imagen + transición */
+}
+
+.slide {
+  width: 100%; /* Cada slide debe ocupar el 100% del contenedor de slides */
+  flex: 0 0 auto;
+}
+
+.slide1 {
+  position: relative;
+  background-image: url("/img/image1.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.slide1 .contentSlide1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.textSlide {
+  text-align: center;
+  color: white;
+}
+
+.btnClass {
+  background-color: #234a9e;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 80%;
+  border-radius: 20px;
+}
+
+.btnClass:hover {
+  background-color: #305fc5;
+  transition: all 0.2s ease-in;
+}
+
+.slide2 {
+  position: relative;
+  background-image: url("/img/image2.jpg");
+  background-repeat: no-repeat;
+  background-position: 100% 0%;
+}
+
+.slide2 .contentSlide2 {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.slide3 {
+  position: relative;
+  background-image: url("/img/image3.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 5%;
+}
+
+.slide3 .contentSlide3 {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+  }
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  } /* Imagen 1 visible desde 0% a 20% */
+  25% {
+    transform: translateX(-100%);
+  } /* Imagen 2 comienza a ser visible */
+  45% {
+    transform: translateX(-100%);
+  } /* Imagen 2 visible desde 25% a 45% */
+  50% {
+    transform: translateX(-200%);
+  } /* Imagen 3 comienza a ser visible */
+  80% {
+    transform: translateX(-200%);
+  } /* Imagen 3 visible desde 50% a 70% */
+  100% {
+    transform: translateX(0%);
+  } /* Volver a la primera imagen al final del ciclo */
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.control {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.control:nth-child(1) {
+    animation: controlAnimation 20s infinite;
+    animation-delay: 0s;
+  }
+  
+  .control:nth-child(2) {
+    animation: controlAnimation 20s infinite;
+    animation-delay: 6.67s; /* Intervalo de 6.67 segundos */
+  }
+  
+  .control:nth-child(3) {
+    animation: controlAnimation 20s infinite;
+    animation-delay: 13.33s; /* Intervalo de 13.33 segundos */
+  }
+
+@keyframes controlAnimation {
+  0% {
+    background-color: #bbb;
+  }
+  33.33% {
+    background-color: #333;
+  }
+  66.66% {
+    background-color: #bbb;
+  }
+  100% {
+    background-color: #bbb;
+  }
+}
+
+.products{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+    .products .productsList{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        padding: 0px 10px;
+        gap: 20px;
+    }
+
+        .products .productsList .card{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 23%;
+            align-items: center;
+            padding: 10px;
+            border-radius: 20px;
+            box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.26);
+            gap: 10px;
+        }
+
+            .products .productsList .card img{
+                height: 30vh;
+                object-fit: contain;
+            }
+
+            .products .productsList .card p{
+                text-align: justify;
+                margin: 0;
+            }
+
+.bannerSale{
+    position: relative;
+    background-image: url("/img/venta.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    height: 40vh;
+    margin-bottom: 20px;
+}
+
+    .bannerSale .contentSale{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        transform: translate(-50%, -50%);
+        width: 30%;
+    }
+
+
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .slide1 {
+    background-position: 80% 50%;
+  }
+
+  .slide1 .contentSlide1 {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  .products .productsList .card{
+    flex-basis: 20%;
+   }
+}
+
+/* Responsive para mobile */
+@media only screen and (max-width: 768px) {
+  .slide1 {
+    background-position: 80% 50%;
+  }
+
+  .slide2 {
+    background-position: 83% 0%;
+  }
+
+  .slide3 {
+    background-position: 62% 5%;
+  }
+
+  .slide1 .contentSlide1 {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+
+  .slide2 .contentSlide2 {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+
+  .slide3 .contentSlide3 {
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+  .products .productsList .card{
+    flex-basis: 100%;
+   }
+
+   .bannerSale{
+        background-position: 62% 5%;
+        width: 100%;
+    }
+
+        .bannerSale .contentSale{
+            left: 70%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+        }
+
+            .bannerSale .contentSale .textSlide{
+                font-size: 15px;
+                object-fit: contain;
+                width: 100%;
+            }
+            
+}
+
+
+
 /*--------------------------------------------------------------------FOOTER------------------------------------------*/
 
 footer {
@@ -184,7 +508,7 @@ footer {
     background-color: var(--primary-color);
     height: 200px;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     display: inline-block;
     color: #ffffff;
     line-height: 0.5;
