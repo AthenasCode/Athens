@@ -10,11 +10,31 @@ body {
     --secondary-color: #4a69ac;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #234a9e transparent;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #234a9e;
+  border-radius: 20px;
+  border: 3px solid transparent;
+}
+
 
 /*---------------------------------------------------HEADER------------------------------------------------------*/
 
 /*NAVBAR*/
-.header, nav, .subnavbar {
+.header {
     width: 100vw;
 }
 
@@ -71,7 +91,7 @@ nav{
     text-transform: uppercase;
     text-decoration: none;
     color: #ffffff;
-    width: 100vw;
+    width: 100%;
     display: flex; 
     align-items: center; 
     justify-content: flex-start; 
@@ -175,8 +195,6 @@ nav{
 .container-home {
   display: flex;
   flex-direction: column;
-  margin-top: 90px;
-  margin-bottom: 90px;
 }
 
 .carousel {
@@ -490,7 +508,7 @@ footer {
     background-color: var(--primary-color);
     height: 200px;
     bottom: 0;
-    width: 100vw;
+    width: 100%;
     display: inline-block;
     color: #ffffff;
     line-height: 0.5;
