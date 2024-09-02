@@ -7,7 +7,79 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="main-content">
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div>
+                    <img src="./img/logo.png" alt="Logo Athens" width="200px">
+                </div>
+                <div>
+                    <div class="center-menu">
+                        <img src="./img/search-icon.svg" alt="Icono de búsqueda">
+                        <input class="flexsearch--input" type="search" placeholder="search">
+                    </div>
+                </div>
+                <div>
+                    <div class="right-menu">
+                        <img src="./img/user-icon.svg" width="30px" alt="Icono de Usuario">
+                        <a href="#" class="hover-button">Mi cuenta</a>
+                        <img src="./img/car-icon.svg" width="30px" alt="Icono de Carrito">
+                        <a href="cart.html" class="hover-button">Carrito</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="subnavbar">
+                <div class="item">
+                    <h3>Tecnología</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="1">
+                    <ul class="dropdown" id="dropdown-1">
+                        <li>Computadores</li>
+                        <li>Televisores</li>
+                        <li>Audio</li>
+                        <li>Video</li>
+                        <li>Impresión</li>
+                        <li>Cámaras</li>
+                    </ul>
+                </div>
+
+
+                <div class="item">
+                    <h3>Electrodomésticos</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="2">
+                    <ul class="dropdown" id="dropdown-2">
+                        <li>Climatización</li>
+                        <li>Refrigeración</li>
+                        <li>Lavadoras/Secadoras</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>Celulares</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="3">
+                    <ul class="dropdown" id="dropdown-3">
+                        <li>Celulares</li>
+                        <li>Tabletas</li>
+                        <li>Smartwatch</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>Hogar</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="4">
+                    <ul class="dropdown" id="dropdown-4">
+                        <li>Salas</li>
+                        <li>Comedor</li>
+                        <li>Cocina</li>
+                        <li>Baño</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <main class="main-content container">
         <aside class="filters">
             <h2>Filtros</h2>
             <h3>Categoría</h3>
@@ -190,11 +262,36 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <footer>
-        <div class="banner-publicitario">
-            <img src="https://placehold.co/1200x100" alt="Publicidad">
+        <div class="subfooter1">
+            <div class="razon">
+                <h3>Athens S.A.S</h3>
+                <h3>NIT: 9003258</h3>
+            </div>
+            <div class="redes">
+                <img src="./img/github-icon.svg" alt="Icono de Github">
+                <img src="./img/instagram-icon.svg" alt="Icono de Instagram">
+                <img src="./img/youtube-icon.svg" alt="Icono de Youtube">
+            </div>
+            <div class="pagos">
+                <div class="arriba">
+                    <h3>Método de Pagos</h3>
+                </div>
+                <div class="abajo">
+                    <img src="./img/efectivo-icon.svg" alt="Icono de Efectivo">
+                    <img src="./img/tarjeta-icon.svg" alt="Icono de Tarjeta">
+                    <img src="./img/transfer-icon.svg" alt="Icono de Transferencia">
+                </div>
+            </div>
+        </div>
+        <div class="subfooter2">
+            <h3>Tecnología</h3>
+            <h3>Electrodomésticos</h3>
+            <h3>Celulares</h3>
+            <h3>Hogar</h3>
+
         </div>
     </footer>
 </body>

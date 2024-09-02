@@ -232,6 +232,41 @@ nav {
   }
   .hamburger-menu {
     display:flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #check {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+    width: 100%;
+  }
+  .mobile-menu>details {
+    color: white;
+    padding: 20px;
+    text-transform: uppercase;
+    cursor:pointer;
+  }
+  .mobile-menu>details>ul{
+    padding: 0;
+    list-style: none;
+    font-size: initial;
+    font-weight: 400;
+  }
+  .mobile-menu>details>ul>li{
+    padding:10px;
+  }
+  .mobile-menu>details>summary{
+    font-size:18px;
+  }
+  #check:checked ~ .mobile-menu {
+    display: block;
+  }
+  .hamburger-menu>.checkbtn{
+    padding: 20px;
+    color: white;
   }
 }
 /* ------------------------------------------------------------------CONTENT------------------------------------------*/
