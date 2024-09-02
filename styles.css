@@ -379,6 +379,37 @@ a{
   width: 100%;
   height: auto;
 }
+.carousel {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ajusta según sea necesario */
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+}
+
+.slide {
+  width: 100%;
+  /* Asegúrate de ajustar el alto de las slides según tu diseño */
+  height: 300px; /* Cambia esto según sea necesario */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+
+.slide:nth-child(3) {
+  display: none; /* Oculta la tercera slide */
+}
+
+.contentSlide1, .contentSlide2, .contentSlide3 {
+  text-align: center;
+  /* Ajusta otros estilos según tu diseño */
+}
+
 .container h2{
   margin-top: 60px;
 }
@@ -389,29 +420,7 @@ h4{
 .abanner{
   color: #ffffff;
 }
-@keyframes slide {
-  0% {
-    transform: translateX(0%);
-  }
-  20% {
-    transform: translateX(0%);
-  } /* Imagen 1 visible desde 0% a 20% */
-  25% {
-    transform: translateX(-100%);
-  } /* Imagen 2 comienza a ser visible */
-  45% {
-    transform: translateX(-100%);
-  } /* Imagen 2 visible desde 25% a 45% */
-  50% {
-    transform: translateX(-200%);
-  } /* Imagen 3 comienza a ser visible */
-  80% {
-    transform: translateX(-200%);
-  } /* Imagen 3 visible desde 50% a 70% */
-  100% {
-    transform: translateX(0%);
-  } /* Volver a la primera imagen al final del ciclo */
-}
+
 
 .controls {
   position: absolute;
