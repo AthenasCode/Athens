@@ -291,11 +291,6 @@ a{
   height: 400px;
   overflow: hidden;
 }
-.card img{
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-}
 .card {
   border: 1px solid #ddd;
   border-radius: 8px;
@@ -309,8 +304,7 @@ a{
 .card p {
   font-size: 0.9em;
   margin: 0 0 16px;
-  height: 120px; /* Ajusta esta altura según tus necesidades */
-  overflow: hidden;
+  overflow-x: hidden;
   text-overflow: ellipsis;
 }
 .slides {
@@ -496,7 +490,6 @@ h4{
   background-size: cover;
   background-position: left;
   height: 40vh;
-  margin-bottom: 50px;
 }
 
 .bannerSale .contentSale {
@@ -577,6 +570,12 @@ h4{
     font-size: 15px;
     object-fit: contain;
     width: 100%;
+  }
+  .card p {
+    overflow: visible;
+  }
+  .card {
+    height: 100%;
   }
 }
 
@@ -699,7 +698,6 @@ p{
   display: grid;
   text-align: left;
   gap: 20px;
-  padding: 20px;
   border-radius: var(--border-radius);
   border: 1px solid var(--tertiary-color);
 }
@@ -717,6 +715,7 @@ p{
     width: 100%;
     border-radius: var(--border-radius);
     aspect-ratio: 1/1;
+    object-fit:contain;
 }
 .imgpdp img{
   width: 65%;
@@ -727,8 +726,7 @@ p{
     grid-auto-flow: row;
   }
   .related-items {
-    display: grid;
-    grid-auto-flow: row;
+    display: block;
   }
   .product-info img {
     width: 100%;
@@ -949,7 +947,6 @@ p{
   background-size: cover;
   background-position: left;
   height: 40vh;
-  margin-bottom: 50px;
   color: #fff;
 }
 
