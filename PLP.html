@@ -5,9 +5,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página de Lista de Electrodomésticos</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="main-content">
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div>
+                    <img src="./img/logo.png" alt="Logo Athens" width="200px">
+                </div>
+                <div>
+                    <div class="center-menu">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input class="flexsearch--input" type="search" placeholder="search">
+                    </div>
+                </div>
+                <div>
+                    <div class="right-menu">
+                        <i class="fa-solid fa-user"></i>
+                        <a href="#" class="hover-button">Mi cuenta</a>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <a href="cart.html" class="hover-button">Carrito</a>
+                    </div>
+                </div>
+                <div class ="hamburger-menu">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                      <i class="fas fa-bars"></i>
+                    </label>
+                    <div class="mobile-menu">
+                        <details>
+                            <summary>Tecnología</summary>
+                            <ul>
+                                <li>Computadores</li>
+                                <li>Televisores</li>
+                                <li>Audio</li>
+                                <li>Video</li>
+                                <li>Impresión</li>
+                                <li>Cámaras</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Electrodomésticos</summary>
+                            <ul>
+                                <li>Climatización</li>
+                                <li>Refrigeración</li>
+                                <li>Lavadoras/Secadoras</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Celulares</summary>
+                            <ul>
+                                <li>Celulares</li>
+                                <li>Tabletas</li>
+                                <li>Smartwatch</li>
+                            </ul>
+                        </details>
+                        <details>
+                            <summary>Hogar</summary>
+                            <ul>
+                                <li>Salas</li>
+                                <li>Comedor</li>
+                                <li>Cocina</li>
+                                <li>Baño</li>
+                            </ul>
+                        </details>
+                        
+                      </div>
+                </div>
+            </div>
+
+            <div class="subnavbar">
+                <div class="item">
+                    <h3>Tecnología</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="1">
+                    <ul class="dropdown" id="dropdown-1">
+                        <li>Computadores</li>
+                        <li>Televisores</li>
+                        <li>Audio</li>
+                        <li>Video</li>
+                        <li>Impresión</li>
+                        <li>Cámaras</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Electrodomésticos</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="2">
+                    <ul class="dropdown" id="dropdown-2">
+                        <li>Climatización</li>
+                        <li>Refrigeración</li>
+                        <li>Lavadoras/Secadoras</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Celulares</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="3">
+                    <ul class="dropdown" id="dropdown-3">
+                        <li>Celulares</li>
+                        <li>Tabletas</li>
+                        <li>Smartwatch</li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <h3>Hogar</h3>
+                    <img src="./img/arrow-icon.svg" alt="Icono de Flecha" id="4">
+                    <ul class="dropdown" id="dropdown-4">
+                        <li>Salas</li>
+                        <li>Comedor</li>
+                        <li>Cocina</li>
+                        <li>Baño</li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main-content container">
         <aside class="filters">
             <h2>Filtros</h2>
             <h3>Categoría</h3>
@@ -190,11 +304,36 @@
                 </div>
             </div>
         </section>
-    </div>
+    </main>
 
     <footer>
-        <div class="banner-publicitario">
-            <img src="https://placehold.co/1200x100" alt="Publicidad">
+        <div class="subfooter1">
+            <div class="razon">
+                <h3>Athens S.A.S</h3>
+                <h3>NIT: 9003258</h3>
+            </div>
+            <div class="redes">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="pagos">
+                <div class="arriba">
+                    <h3>Método de Pagos</h3>
+                </div>
+                <div class="abajo">
+                    <img src="./img/efectivo-icon.svg" alt="Icono de Efectivo">
+                    <img src="./img/tarjeta-icon.svg" alt="Icono de Tarjeta">
+                    <img src="./img/transfer-icon.svg" alt="Icono de Transferencia">
+                </div>
+            </div>
+        </div>
+        <div class="subfooter2">
+            <h3>Tecnología</h3>
+            <h3>Electrodomésticos</h3>
+            <h3>Celulares</h3>
+            <h3>Hogar</h3>
+
         </div>
     </footer>
 </body>
